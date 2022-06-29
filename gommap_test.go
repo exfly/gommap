@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 package gommap
@@ -9,7 +10,7 @@ import (
 	"syscall"
 	"testing"
 
-	. "launchpad.net/gocheck"
+	. "gopkg.in/check.v1"
 )
 
 func TestAll(t *testing.T) {

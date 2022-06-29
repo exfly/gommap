@@ -1,3 +1,4 @@
+//go:build !windows && !freebsd
 // +build !windows,!freebsd
 
 package gommap
@@ -6,7 +7,7 @@ import (
 	"os"
 	"path"
 
-	. "launchpad.net/gocheck"
+	. "gopkg.in/check.v1"
 )
 
 func (s *S) TestIsResidentTwoPages(c *C) {
